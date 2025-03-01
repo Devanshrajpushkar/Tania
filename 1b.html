@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <script>
+        // JavaScript function to validate the answer
+        function validateAnswer() {
+            const answer = document.getElementById('answer').value;
+            const correctAnswer = 'TANIA❤️'; // Correct answer for this example
+
+            // Check if the answer is correct
+            if (answer === correctAnswer ) {
+                // Redirect to the next page
+                window.location.href = '1c.html'; // Replace with your next page URL
+            } else {
+                alert('Let me tell you the correct format, it is (TANIA❤️) ');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Answer this correctly, and you'll get my contact details. <br>
+        I already have your number, but I'd love to receive just the first <font color="cyanne" >'Hii'</font> from you.</h1>
+    <p>Please Enter Your Name with Red Heart ❤️ ?</p>
+
+    <!-- Input field for the answer -->
+    <input type="text" id="answer" size="40em"  placeholder="Enter in BLOCK letters without giving space."> <br> <br>
+
+    <!-- Submit button -->
+    <button onclick="validateAnswer()">Submit your answer</button>
+
+</body>
+</html>
